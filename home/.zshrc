@@ -50,6 +50,7 @@ eval "$(rbenv init -)"
 if [[ "$TERM" == "xterm" ]]; then
   export TERM=xterm-256color
 fi
+
 eval `dircolors ~/.dircolors`
 
 alias ls='ls --color=auto -h --group-directories-first'

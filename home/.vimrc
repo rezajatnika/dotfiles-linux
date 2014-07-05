@@ -43,11 +43,10 @@ set number
 set t_Co=256
 
 if has('gui_running')
-  colorscheme solarized
-  set background=light
+  colorscheme base16-tomorrow
+  set background=dark
 else
- colorscheme solarized
- set background=light
+  colorscheme Tomorrow-Night
 endif
 
 " Indentation
@@ -97,7 +96,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " No gemfile rspec
-noremap <Leader>rs :!clear; rspec --color<CR>
+nmap <Leader>rs :!clear; rspec --color<CR>
 
 let g:rspec_command = "!clear; bundle exec rspec {spec}"
 
