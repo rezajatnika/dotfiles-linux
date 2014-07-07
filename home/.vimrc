@@ -47,6 +47,7 @@ if has('gui_running')
   set background=dark
 else
   colorscheme Tomorrow-Night
+  set background=dark
 endif
 
 " Indentation

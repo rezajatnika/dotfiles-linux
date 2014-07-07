@@ -39,7 +39,7 @@ fi
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Custom prompt
-PROMPT="%n λ "
+PROMPT="%c λ "
 RPROMPT='%p $(git_prompt_info)%{$reset_color%}'
 
 # rbenv
