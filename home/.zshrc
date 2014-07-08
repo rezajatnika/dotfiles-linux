@@ -54,3 +54,8 @@ fi
 eval `dircolors ~/.dircolors`
 
 alias ls='ls --color=auto -h --group-directories-first'
+
+# Base16 Shell
+BASE16_SCHEME="tomorrow"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL  ]] && . $BASE16_SHELL

@@ -27,7 +27,7 @@ endif
 set pastetoggle=<F4>
 
 " MacVim or GVim settings
-set guifont=Source\ Code\ Pro\ 10
+set guifont=Source\ Code\ Pro\ 12
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set guioptions-=L " Removes left hand scroll bar
@@ -41,12 +41,13 @@ set number
 
 " Colorscheme
 set t_Co=256
+let base16colorspace=256
 
 if has('gui_running')
   colorscheme base16-tomorrow
   set background=dark
 else
-  colorscheme Tomorrow-Night
+  colorscheme base16-tomorrow
   set background=dark
 endif
 
@@ -96,10 +97,10 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+let g:rspec_command = "!clear; bundle exec rspec {spec}"
+
 " No gemfile rspec
 nmap <Leader>rs :!clear; rspec --color<CR>
-
-let g:rspec_command = "!clear; bundle exec rspec {spec}"
 
 nmap <Leader>n :NERDTreeToggle<CR>
 
